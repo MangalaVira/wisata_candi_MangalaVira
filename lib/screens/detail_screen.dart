@@ -5,7 +5,6 @@ import 'package:wisata_candi/models/candi.dart';
 class DetailScreen extends StatelessWidget {
   final Candi candi; // panggil ini dulu baru bisa candi.imageAsset
 
-
   const DetailScreen({super.key, required this.candi});
 
   @override
@@ -27,10 +26,23 @@ class DetailScreen extends StatelessWidget {
                     fit: BoxFit.cover,
                   ),
                 ),
-              )
+              ),
               // tombol back kustom
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 32,
+                ),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.deepPurple[100]?.withOpacity(0,8),
+                    shape: BoxShape.circle,
+                  ),
+                  child: IconButton(
+                    onPressed: ,
+                  ),
+                ),
+              )
             ],
-          )
+          ),
         ],
       ),
     );
